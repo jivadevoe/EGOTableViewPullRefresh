@@ -227,6 +227,7 @@
 #pragma mark Dealloc
 
 - (void)dealloc {
+	[refreshHeaderView release];
 	refreshHeaderView = nil;
     [super dealloc];
 }
